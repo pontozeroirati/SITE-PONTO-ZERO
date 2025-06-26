@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência Ponto Zero - Design, Criatividade e Tecnologia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Intro Animation Screen -->
+  <div id="introScreen" class="intro-screen">
+    <div class="intro-background">
+      <div class="intro-particles">
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+        <div class="intro-particle"></div>
+      </div>
+      <div class="intro-grid"></div>
+    </div>
+    
+    <div class="intro-content">
+      <div class="intro-logo-container">
+        <img src="public/logo_agencia_ponto_zero_transparente copy.png" alt="Agência Ponto Zero" class="intro-logo">
+        <div class="intro-logo-rings">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+        </div>
+        <div class="intro-logo-glow"></div>
+      </div>
+      
+      <div class="intro-text">
+        <h1 class="intro-brand">PONTO ZERO</h1>
+        <div class="intro-tagline">
+          <span class="word">DESIGN</span>
+          <span class="word">CRIATIVIDADE</span>
+          <span class="word">TECNOLOGIA</span>
+        </div>
+      </div>
+      
+      <div class="intro-loading">
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+        <div class="loading-text">CARREGANDO...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Login Modal (Hidden) -->
+  <div id="adminModal" class="admin-modal">
+    <div class="admin-modal-content">
+      <span class="admin-close">&times;</span>
+      <h2>Acesso Administrativo</h2>
+      <form id="adminForm">
+        <div class="admin-form-group">
+          <input type="text" id="adminUser" placeholder="Usuário" required>
+        </div>
+        <div class="admin-form-group">
+          <input type="password" id="adminPass" placeholder="Senha" required>
+        </div>
+        <button type="submit" class="admin-btn">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Panel (Hidden) -->
+  <div id="adminPanel" class="admin-panel">
+    <div class="admin-header">
+      <h3>Painel Administrativo</h3>
+      <button id="logoutBtn" class="admin-logout">Sair</button>
+    </div>
+    <div class="admin-content">
+      <p>Bem-vindo ao painel administrativo da Agência Ponto Zero!</p>
+      <div class="admin-stats">
+        <div class="admin-stat">
+          <span>Visitantes Hoje</span>
+          <strong>127</strong>
+        </div>
+        <div class="admin-stat">
+          <span>Contatos Recebidos</span>
+          <strong>8</strong>
+        </div>
+        <div class="admin-stat">
+          <span>Projetos Ativos</span>
+          <strong>12</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Website Content (Hidden Initially) -->
+  <div id="mainContent" class="main-content">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-container">
+            <img src="public/logo_agencia_ponto_zero_transparente copy.png" alt="Agência Ponto Zero" class="logo-image">
+          </div>
+          <span class="logo-text">Ponto Zero</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Início</a>
+          <a href="#services" class="nav-link">Serviços</a>
+          <a href="#about" class="nav-link">Sobre</a>
+          <a href="#contact" class="nav-link">Contato</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Redesigned -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="animated-grid"></div>
+        <div class="floating-particles">
+          <div class="particle particle-1"></div>
+          <div class="particle particle-2"></div>
+          <div class="particle particle-3"></div>
+          <div class="particle particle-4"></div>
+          <div class="particle particle-5"></div>
+          <div class="particle particle-6"></div>
+        </div>
+        <div class="gradient-orbs">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="hero-logo-container">
+          <img src="public/logo_agencia_ponto_zero_transparente copy.png" alt="Agência Ponto Zero" class="hero-logo">
+          <div class="hero-logo-glow"></div>
+        </div>
+        
+        <h1 class="hero-brand-name">Ponto Zero</h1>
+        
+        <p class="hero-tagline">Design, Criatividade e Tecnologia</p>
+        
+        <p class="hero-description">
+          Transformamos ideias em experiências digitais extraordinárias. 
+          Do conceito à execução, criamos soluções que conectam sua marca ao futuro.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Iniciar Projeto</a>
+          <a href="#services" class="btn btn-secondary">Ver Serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nossos Serviços</h2>
+          <p class="section-subtitle">Soluções completas para sua presença digital</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="card-icon">
+              <div class="icon-music"></div>
+            </div>
+            <h3>Criação de Jingles com IA</h3>
+            <p>Músicas, vinhetas e trilhas sonoras personalizadas para sua marca ou projeto usando tecnologia de inteligência artificial.</p>
+            <div class="card-features">
+              <span class="feature">Composição Original</span>
+              <span class="feature">IA Avançada</span>
+              <span class="feature">Múltiplos Formatos</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <div class="icon-landing"></div>
+            </div>
+            <h3>Landing Pages</h3>
+            <p>Páginas de alta conversão, ideais para lançamentos e campanhas. Design responsivo e otimizado para resultados.</p>
+            <div class="card-features">
+              <span class="feature">Alta Conversão</span>
+              <span class="feature">SEO Otimizado</span>
+              <span class="feature">Mobile First</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <div class="icon-menu"></div>
+            </div>
+            <h3>Cardápios Digitais</h3>
+            <p>Crie cardápios modernos e responsivos para restaurantes e lanchonetes. Interface intuitiva e design atrativo.</p>
+            <div class="card-features">
+              <span class="feature">QR Code</span>
+              <span class="feature">Gestão Fácil</span>
+              <span class="feature">Design Moderno</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <div class="icon-website"></div>
+            </div>
+            <h3>Mini Sites Profissionais</h3>
+            <p>Sites enxutos e objetivos para apresentar seus serviços ou portfólio. Rápidos, eficientes e impactantes.</p>
+            <div class="card-features">
+              <span class="feature">Carregamento Rápido</span>
+              <span class="feature">Design Clean</span>
+              <span class="feature">Fácil Manutenção</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <div class="icon-brand"></div>
+            </div>
+            <h3>Identidade Visual</h3>
+            <p>Criação de logotipos, paleta de cores, fontes e elementos visuais exclusivos para fortalecer sua marca.</p>
+            <div class="card-features">
+              <span class="feature">Logo Exclusivo</span>
+              <span class="feature">Manual da Marca</span>
+              <span class="feature">Aplicações Diversas</span>
+            </div>
+          </div>
+
+          <div class="service-card featured">
+            <div class="card-icon">
+              <div class="icon-ai"></div>
+            </div>
+            <h3>Soluções com IA</h3>
+            <p>Integramos inteligência artificial em seus projetos para criar experiências únicas e inovadoras.</p>
+            <div class="card-features">
+              <span class="feature">Tecnologia Avançada</span>
+              <span class="feature">Automação</span>
+              <span class="feature">Inovação</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Por que escolher a Ponto Zero?</h2>
+            <p>Somos uma agência digital focada em inovação e resultados. Combinamos criatividade, tecnologia e estratégia para criar soluções que realmente fazem a diferença.</p>
+            
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projetos Entregues</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Clientes Satisfeitos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">24h</span>
+                <span class="stat-label">Suporte Ativo</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-visual">
+            <div class="tech-stack">
+              <div class="tech-item">HTML5</div>
+              <div class="tech-item">CSS3</div>
+              <div class="tech-item">JavaScript</div>
+              <div class="tech-item">React</div>
+              <div class="tech-item">Node.js</div>
+              <div class="tech-item">AI/ML</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Vamos Conversar?</h2>
+          <p class="section-subtitle">Entre em contato e leve sua presença digital ao próximo nível</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-details">
+                <h3>WhatsApp</h3>
+                <p>(42) 99831-9122</p>
+                <a href="https://wa.me/5542998319122" class="contact-link" target="_blank">Enviar mensagem</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>contato@pontozero.com</p>
+                <a href="mailto:contato@pontozero.com" class="contact-link">Enviar email</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">⏰</div>
+              <div class="contact-details">
+                <h3>Horário</h3>
+                <p>Segunda a Sexta</p>
+                <p>08:00 às 18:00</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+              </div>
+              <div class="form-group">
+                <select id="service" name="service" required>
+                  <option value="">Selecione um serviço</option>
+                  <option value="jingles">Criação de Jingles com IA</option>
+                  <option value="landing">Landing Pages</option>
+                  <option value="cardapio">Cardápios Digitais</option>
+                  <option value="minisite">Mini Sites</option>
+                  <option value="identidade">Identidade Visual</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Solicitar Orçamento</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="simple-footer">
+      <div class="container">
+        <p>© 2025 Agência Ponto Zero - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
